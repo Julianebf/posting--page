@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posting Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>Blog Post</h2>
+  </nav>
+
+  <main>
+    <section class="form-section">
+      <h3>Criar Post</h3>
+
+      <form id="form-post">
+        <input 
+          type="text" 
+          id="titulo" 
+          placeholder="Digite o título" 
+          required
+        >
+
+        <textarea 
+          id="conteudo" 
+          placeholder="Digite o conteúdo"
+          required
+        ></textarea>
+
+        <button type="submit">Postar</button>
+      </form>
+    </section>
+
+    <section class="output-section">
+      <h3>Post criado</h3>
+
+      <article>
+        <h2 id="renderizador-titulo"></h2>
+        <p id="renderizador-conteudo"></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto de Certificação</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
